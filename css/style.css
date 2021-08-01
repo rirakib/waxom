@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top_nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent;
+}
+
+.navbar-brand img {
+    max-width: 150px;
+}
+
+.bag {
+    padding-right: 15px;
+}
+
+/* Header section css  */
+
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/header_back_one.png');
+}
+
+header .main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.start_btn .btn {
+    color: #fff;
+    background-color: #998675;
+}
+
+
+
+/* about section css  */
+
+
+.about {
+    margin-top: 82px;
+}
+
+.about .grid {
+    cursor: pointer;
+}
+
+.about_details p {
+    font-size: 14px;
+}
+
+.about_icon {
+    font-size: 30px;
+
+}
+
+.hover_line {
+
+    height: 4px;
+    width: 40%;
+    background-color: #c7b299;
+    margin-top: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.about .grid:hover .hover_line {
+    opacity: 1;
+    visibility: visible;
+}
+
+.about .grid:hover .about_icon {
+    color: #c7b299;
+}
+
+
+.protfolio {
+    margin-top: 82px;
+}
+
+.protfolio .protfolio_row {
+    position: relative;
+    z-index: 20;
+    
+}
+.protfolio_title{
+    padding:16px 0px;
+}
+.protfolio .protfolio_abs_img {
+    position: absolute;
+    margin-left: 30%;
+    margin-top: -60px;
+}
+
+.protfolio_title_row {
+    background: rgb(12, 10, 54);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(78, 52, 39, 0.9934348739495799) 100%);
+    color: rgb(211, 206, 206);
+}
+.protfolio_btn .btn{
+    background-color: #c7b299;
+    color:#fff;
+}
