@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 .top_nav {
     position: fixed;
     width: 100%;
@@ -111,4 +112,70 @@ header .main {
 .protfolio_btn .btn{
     background-color: #c7b299;
     color:#fff;
+}
+
+
+/* galary css  */
+
+
+.gallery_product{
+    position:relative;
+    max-width: 300px;
+    overflow: hidden;
+    
+}
+
+.gallery_product::after{
+    content: '';
+    position:absolute;
+    background-color: #ec7d1b;
+    height: 100%;
+    width: 100%;
+    left:0;
+    top:0;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+
+}
+.icon_box{
+    position:absolute;
+    left:30%;
+    top:-35%;
+    z-index: 100;
+    color:#fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    transition: 0.5s;
+}
+.icon_box .icon{
+    background-color: #111;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    padding-left:10px;
+    margin: auto 5px;
+}
+
+.galary_box p{
+    font-size: 14px;
+    height: auto;
+    
+}
+.gallery_product:hover:after{
+    opacity: 0.4;
+    visibility: visible;
+}
+.galary_description{
+    transition: 0.5s;
+    padding-left: 10px;
+}
+.gallery_product:hover .galary_description{
+    background-color: #362f2d;
+    color: #fff;
+}
+.gallery_product:hover .icon_box{
+    top:35%;
 }
